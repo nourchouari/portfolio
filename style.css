@@ -1,12 +1,12 @@
 html{
-    background-color: hsl(284, 91%, 91%) !important;
+    background-color: #E2BFD5 !important;
     height: 100%;
     width: 100%;
 }
 body{
     margin: 0;
     padding: 0;
-    background-color: hsl(284, 91%, 91%);
+    background-color: #E2BFD5;
     font-family:Verdana, Geneva, sans-serif !important;
     height: 100%;
     width: 100%;
