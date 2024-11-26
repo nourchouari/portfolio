@@ -263,4 +263,66 @@ hr{
     #section2{
         height: 100vh;
     }
+
+    @media screen and (max-width: 768px) {
+    #section1 {
+        height: auto;
+        background-attachment: scroll; /* Supprime l'effet fixed pour de meilleures performances mobiles */
+    }
+    h1 {
+        font-size: 28px; /* Taille du texte réduite */
+    }
+    #titreExplicative {
+        flex-direction: column;
+        padding-left: 20px;
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+    #titreExplicative p {
+        font-size: 16px;
+    }
+    .conteneur-box {
+        grid-template-columns: 1fr; /* Une seule colonne pour un affichage vertical */
+        justify-items: center;
+    }
+    .box {
+        width: 90%;
+        height: auto;
+    }
+    .imagebox {
+        height: auto;
+        object-fit: contain; /* Pour que les images restent proportionnelles */
+    }
+    .titreRubrique {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .conteneur-box-centre-interet {
+        grid-template-columns: 1fr;
+    }
+    .box-centre-interet {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+    #competences #conteneur-box-competences {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les icônes de compétences */
+    }
+    .box-competence p {
+        font-size: 12px;
+    }
+    #section2 article p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    hr {
+        margin-top: 30px;
+    }
+    .rubrique {
+        margin: 0 20px;
+    }
+}
+
 }
