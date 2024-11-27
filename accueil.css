@@ -282,9 +282,6 @@ hr{
     #titreExplicative p {
         font-size: 16px;
     }
-    h3{
-        font-size: auto;
-    }
     .conteneur-box {
         grid-template-columns: 1fr; /* Une seule colonne pour un affichage vertical */
         justify-items: center;
