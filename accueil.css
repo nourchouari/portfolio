@@ -308,7 +308,7 @@ hr{
         margin: 10px 0;
     }
     .box-centre-interet h3{
-        font-size: 12px;
+        font-size: 11px;
     }
     #competences #conteneur-box-competences {
         grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les icônes de compétences */
