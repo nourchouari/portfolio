@@ -84,6 +84,17 @@ header h2{
 .buttonNav{
     display: none;
 }
+
+.titreRubrique{
+    color :#000000;
+    padding: 20px;
+    transition: 0.5s;
+}
+.titreRubrique:hover{
+    background-color: #ffffff;
+    padding: 30px;
+    transition: 0.4s;
+}
 @media screen and (max-width: 1130px){
     #buttonNav{
         display: inline-block;
