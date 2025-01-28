@@ -92,12 +92,20 @@ h1, h2, h3 {
     gap: 20px;
 }
 
-.box, .box-centre-interet {
+.box {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px; /* Hauteur fixe pour uniformiser les boîtes */
+}
+
+.imagebox {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 100%; /* Prend toute la hauteur du conteneur */
+    object-fit: cover; /* Assure que l'image couvre toute la zone sans déformation */
+    border-radius: 8px; /* Arrondit les coins */
 }
 
 .box:hover, .box-centre-interet:hover {
@@ -105,11 +113,20 @@ h1, h2, h3 {
     box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5); /* Ombre avec la couleur principale */
 }
 
-.imagebox, .imagebox-centre-interet {
-    width: 100%; /* Prend toute la largeur du conteneur */
+.box-centre-interet {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 200px; /* Hauteur fixe pour uniformiser les boîtes */
+}
+
+.imagebox-centre-interet {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 100%; /* Prend toute la hauteur du conteneur */
     object-fit: cover; /* Assure que l'image couvre toute la zone sans déformation */
-    border-radius: 8px 8px 0 0; /* Arrondit les coins supérieurs */
+    border-radius: 8px; /* Arrondit les coins */
 }
 
 .box:hover .imagebox, .box-centre-interet:hover .imagebox-centre-interet {
