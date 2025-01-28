@@ -414,59 +414,68 @@ footer {
     }
 
     body {
-        font-size: 18px; /* Augmente la taille de la police pour une meilleure lisibilité */
+        font-size: 20px; /* Augmenter encore la taille de la police pour une lisibilité optimale */
     }
 
     header {
-        font-size: 1.4em; /* Augmenter la taille de la police du header */
+        font-size: 1.6em; /* Augmenter la taille de la police du header */
     }
 
-    h1, h2, h3 {
-        font-size: 1.8em; /* Augmenter les tailles de titres */
+    h1 {
+        font-size: 2.4em; /* Augmenter la taille des h1 */
+    }
+
+    h2 {
+        font-size: 2em; /* Augmenter la taille des h2 */
+    }
+
+    h3 {
+        font-size: 1.6em; /* Augmenter la taille des h3 */
     }
 
     nav a {
-        font-size: 1.4em; /* Agrandir la taille des liens dans la navigation */
+        font-size: 1.8em; /* Agrandir encore la taille des liens dans la navigation */
     }
 
     .box-competence a {
-        font-size: 1.3em; /* Agrandir les liens dans les box de compétences */
+        font-size: 1.6em; /* Agrandir les liens dans les box de compétences */
     }
 
     #sideMenu ul li a {
-        font-size: 1.5em; /* Augmenter la taille des liens du side menu */
+        font-size: 1.8em; /* Augmenter la taille des liens du side menu */
     }
 
     .conteneur-box, .conteneur-box-centre-interet {
-        grid-template-columns: 1fr; /* Utiliser une colonne sur petits écrans */
-        padding: 15px;
+        grid-template-columns: 1fr; /* Utiliser une seule colonne */
+        padding: 20px; /* Augmenter l'espacement interne */
     }
 
     .box, .box-centre-interet {
-        height: 250px; /* Augmenter la hauteur des boîtes pour plus de confort */
-        padding: 15px;
+        height: 300px; /* Augmenter la hauteur des boîtes pour plus de confort */
+        padding: 20px; /* Plus de padding pour une meilleure présentation */
     }
 
     .box-competence {
-        font-size: 1.4em; /* Augmenter la taille du texte dans les box de compétences */
+        font-size: 1.6em; /* Augmenter la taille du texte dans les box de compétences */
     }
 
     .imagebox, .imagebox-centre-interet {
-        height: 200px; /* Augmenter la taille des images pour plus de visibilité */
+        height: 250px; /* Augmenter la taille des images pour plus de visibilité */
     }
 
     .overlay {
-        opacity: 0.85; /* Rendre l'overlay un peu plus visible sur mobile */
+        opacity: 0.9; /* Rendre l'overlay encore plus visible */
     }
 
     #menuToggle {
-        padding: 12px 20px; /* Augmenter la taille du bouton du menu */
-        font-size: 1.3em; /* Agrandir la taille du texte du bouton du menu */
+        padding: 15px 25px; /* Augmenter la taille du bouton du menu */
+        font-size: 1.5em; /* Agrandir la taille du texte du bouton du menu */
     }
 
     footer {
-        font-size: 1.3em; /* Agrandir la taille du texte du footer */
+        font-size: 1.6em; /* Agrandir la taille du texte du footer */
     }
+
+
+
 }
-
-
