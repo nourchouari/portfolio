@@ -49,6 +49,12 @@ main {
     padding: 20px;
 }
 
+hr {
+    border: 0; /* Supprime la bordure par défaut */
+    height: 2px; /* Définit l'épaisseur de la ligne */
+    margin: 20px 0; /* Ajoute des marges pour espacer les sections */
+    background-color: rgba(226, 191, 213, 0.9);
+}
 section {
     margin-bottom: 40px;
 }
