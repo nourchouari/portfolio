@@ -1,141 +1,185 @@
-html{
-    background-color: #E2BFD5 !important;
-    height: 100%;
-    width: 100%;
-}
-body{
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #E2BFD5;
-    font-family:Verdana, Geneva, sans-serif !important;
-    height: 100%;
-    width: 100%;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
-.fondFlou{
-    transition: 0.5s;
-    position: fixed;
-    backdrop-filter: blur(15px);
+
+header {
+    background: rgba(226, 191, 213, 0.9); /* #E2BFD5 avec transparence */
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#toggleMenu {
+    display: none;
+}
+
+#buttonNav {
+    display: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #E2BFD5; /* Changement de couleur au survol */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+/* Responsive Grid for Competences */
+#conteneur-box-competences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.box-competence {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-competence:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5); /* Ombre avec la couleur principale */
+}
+
+.box-competence img {
+    width: 60px; /* Taille fixe pour les icônes de compétences */
+    height: 60px;
+    margin: 0 auto 10px; /* Centrer l'icône et ajouter un espace en dessous */
+}
+
+/* Responsive Grid for Projects and Interests */
+.conteneur-box, .conteneur-box-centre-interet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.box, .box-centre-interet {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover, .box-centre-interet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5); /* Ombre avec la couleur principale */
+}
+
+.imagebox, .imagebox-centre-interet {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 200px; /* Hauteur fixe pour uniformiser les boîtes */
+    object-fit: cover; /* Assure que l'image couvre toute la zone sans déformation */
+    border-radius: 8px 8px 0 0; /* Arrondit les coins supérieurs */
+}
+
+.box:hover .imagebox, .box-centre-interet:hover .imagebox-centre-interet {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+.overlay {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 55px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px 0px 20px;
-    font-size: 22px;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.2)!important;
-}
-#titreHeader{
-    margin: 0;
-    color: rgb(0, 0, 0);
-}
-.textNav{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    transition: 0.2s;
-    text-shadow:1px 1px 2px rgba(0, 0, 0, 1);
+    right: 0;
+    bottom: 0;
+    background: rgba(226, 191, 213, 0.7); /* Overlay avec la couleur principale */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.textNav:hover{
-    color: rgb(0, 0, 0);
-    text-decoration: overline;
-}
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 1000px;
-    padding-right: 15px;
-}
-section{
-    width: 100%;
-}
-footer{
-    font-family: Verdana, Geneva, sans-serif !important;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 17px;
-    padding-bottom: 40px !important;
-    padding-top: 40px;
-    
-}
-header h2{
-    font-size: 100%;
-    font-weight: 400;
-}
-#ConteneurPageEnConstruction{
-    width: 100%;
-    height: 100%;
-}
-#titrePageEnConstruction{
-    text-align: center;
-    padding-top: 50vh;
-    color: rgb(0, 0, 0);
-}
-#buttonNav{
-    display: none;
-}
-#toggleMenu {
-    display: none;
-}
-.buttonNav{
-    display: none;
+.box:hover .overlay, .box-centre-interet:hover .overlay {
+    opacity: 1;
 }
 
-.titreRubrique{
-    color :#000000;
+.titrebox, .titrebox-centre-interet {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.2em;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
     padding: 20px;
-    transition: 0.5s;
+    background: #E2BFD5; /* Couleur principale */
+    color: #444;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
-.titreRubrique:hover{
-    background-color: #ffffff;
-    padding: 30px;
-    transition: 0.4s;
-}
-@media screen and (max-width: 1130px){
-    #buttonNav{
-        display: inline-block;
-        padding: 5px 8px;
-        font-size: 20px;
-        line-height: 1;
-        background-color: transparent;
-        border: 1px solid rgb(112, 112, 112);
-        border-radius:7px;
-        cursor: pointer;
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #buttonNav {
+        display: block;
     }
-    #buttonnav:focus{
-        text-decoration: none;
-        outline: 0;
-        box-shadow: 0 0 0 2px;
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(226, 191, 213, 0.9); /* Couleur principale */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
-    nav{
+
+    #toggleMenu:checked ~ nav {
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: fit-content;
     }
-   
-/* Masquer la case à cocher */
-#toggleMenu {
-    display: none;
-}
 
-/* Cacher le menu par défaut */
-#menu {
-    display: none;
-    
-}
+    .conteneur-box, .conteneur-box-centre-interet {
+        grid-template-columns: 1fr;
+    }
 
-/* Afficher le menu lorsque la case à cocher est cochée */
-#toggleMenu:checked + #buttonNav + #menu {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+    .imagebox, .imagebox-centre-interet {
+        height: 150px; /* Réduire la hauteur des images sur les petits écrans */
+    }
 
+    .box-competence img {
+        width: 50px; /* Réduire la taille des icônes sur les petits écrans */
+        height: 50px;
+    }
 }
-
