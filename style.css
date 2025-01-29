@@ -91,6 +91,9 @@ hr {
     cursor: pointer;
 }
 
+section{
+    height: fit-content;
+}
 /* Cache le bouton de menu sur grands écrans */
 @media screen and (min-width: 768px) {
     #menuToggle {
