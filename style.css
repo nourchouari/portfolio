@@ -475,7 +475,67 @@ footer {
     footer {
         font-size: 1.6em; /* Agrandir la taille du texte du footer */
     }
+}
 
+/* Styles pour la fenêtre modale */
+.modal {
+    display: none; /* Masqué par défaut */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 90%;
+    width: 400px;
+    z-index: 2000;
+}
 
+.modal-header {
+    padding: 15px;
+    font-size: 1.5em;
+    background: #E2BFD5;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
+.modal-content {
+    padding: 15px;
+    font-size: 1em;
+    color: #333;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Overlay pour la modal */
+.modal-overlay {
+    display: none; /* Masqué par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1500;
+}
+
+/* Styles mobiles améliorés */
+@media (max-width: 768px) {
+    .box {
+        height: 300px;
+    }
+
+    .titrebox {
+        font-size: 1.5em;
+    }
 }
