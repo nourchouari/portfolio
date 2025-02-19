@@ -327,10 +327,14 @@ footer {
         display: none;
         flex-direction: column;
         background: rgba(226, 191, 213, 0.9); /* Couleur principale */
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
@@ -338,80 +342,82 @@ footer {
         display: flex;
     }
 
+    nav a {
+        font-size: 2.5em; /* Agrandir encore la taille des liens dans la navigation */
+        margin: 15px 0;
+    }
+
     .conteneur-box, .conteneur-box-centre-interet {
         grid-template-columns: 1fr;
     }
 
     .imagebox, .imagebox-centre-interet {
-        height: 200px; /* Augmenter la hauteur des images sur les petits écrans */
+        height: 250px; /* Augmenter encore la hauteur des images sur les petits écrans */
     }
 
     .box-competence img {
-        width: 70px; /* Augmenter la taille des icônes sur les petits écrans */
-        height: 70px;
+        width: 90px; /* Agrandir encore la taille des icônes sur les petits écrans */
+        height: 90px;
     }
 
     body {
-        font-size: 22px; /* Augmenter la taille de la police pour une lisibilité optimale */
+        font-size: 26px; /* Agrandir encore la taille de la police pour une lisibilité optimale */
     }
 
     header {
-        font-size: 1.8em; /* Augmenter la taille de la police du header */
+        font-size: 2.2em; /* Agrandir encore la taille de la police du header */
     }
 
     h1 {
-        font-size: 2.6em; /* Augmenter la taille des h1 */
+        font-size: 3em; /* Agrandir encore la taille des h1 */
     }
 
     h2 {
-        font-size: 2.2em; /* Augmenter la taille des h2 */
+        font-size: 2.6em; /* Agrandir encore la taille des h2 */
     }
 
     h3 {
-        font-size: 1.8em; /* Augmenter la taille des h3 */
-    }
-
-    nav a {
-        font-size: 2em; /* Agrandir la taille des liens dans la navigation */
+        font-size: 2.2em; /* Agrandir encore la taille des h3 */
     }
 
     .box-competence a {
-        font-size: 1.8em; /* Agrandir les liens dans les box de compétences */
+        font-size: 2.2em; /* Agrandir les liens dans les box de compétences */
     }
 
     #sideMenu ul li a {
-        font-size: 2em; /* Augmenter la taille des liens du side menu */
+        font-size: 2.5em; /* Agrandir encore la taille des liens du side menu */
     }
 
     .conteneur-box, .conteneur-box-centre-interet {
         grid-template-columns: 1fr; /* Utiliser une seule colonne */
-        padding: 20px; /* Augmenter l'espacement interne */
+        padding: 30px; /* Augmenter encore l'espacement interne */
     }
 
     .box, .box-centre-interet {
-        height: 350px; /* Augmenter la hauteur des boîtes pour plus de confort */
-        padding: 20px; /* Plus de padding pour une meilleure présentation */
+        height: 400px; /* Augmenter encore la hauteur des boîtes pour plus de confort */
+        padding: 30px; /* Plus de padding pour une meilleure présentation */
     }
 
     .box-competence {
-        font-size: 1.8em; /* Augmenter la taille du texte dans les box de compétences */
+        font-size: 2.2em; /* Agrandir encore la taille du texte dans les box de compétences */
     }
 
     .imagebox, .imagebox-centre-interet {
-        height: 300px; /* Augmenter la taille des images pour plus de visibilité */
+        height: 350px; /* Augmenter encore la taille des images pour plus de visibilité */
     }
 
     .overlay {
-        opacity: 0.9; /* Rendre l'overlay encore plus visible */
+        opacity: 0.95; /* Rendre l'overlay encore plus visible */
     }
 
     #menuToggle {
-        padding: 15px 25px; /* Augmenter la taille du bouton du menu */
-        font-size: 1.7em; /* Agrandir la taille du texte du bouton du menu */
+        padding: 20px 30px; /* Agrandir encore la taille du bouton du menu */
+        font-size: 2em; /* Agrandir encore la taille du texte du bouton du menu */
     }
 
     footer {
-        font-size: 1.8em; /* Agrandir la taille du texte du footer */
+        font-size: 2.2em; /* Agrandir encore la taille du texte du footer */
     }
+}
 }
 
