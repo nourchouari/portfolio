@@ -318,7 +318,7 @@ footer {
 
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #buttonNav {
         display: block;
     }
