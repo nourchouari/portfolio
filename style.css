@@ -352,32 +352,32 @@ footer {
     }
 
     .imagebox, .imagebox-centre-interet {
-        height: 250px; /* Augmenter encore la hauteur des images sur les petits écrans */
+        height: 350px; /* Augmenter encore la hauteur des images sur les petits écrans */
     }
 
     .box-competence img {
-        width: 90px; /* Agrandir encore la taille des icônes sur les petits écrans */
-        height: 90px;
+        width: 150px; /* Agrandir encore la taille des icônes sur les petits écrans */
+        height: 150px;
     }
 
     body {
-        font-size: 26px; /* Agrandir encore la taille de la police pour une lisibilité optimale */
+        font-size: 45px; /* Agrandir encore la taille de la police pour une lisibilité optimale */
     }
 
     header {
-        font-size: 2.2em; /* Agrandir encore la taille de la police du header */
+        font-size: 3.5em; /* Agrandir encore la taille de la police du header */
     }
 
     h1 {
-        font-size: 3em; /* Agrandir encore la taille des h1 */
+        font-size: 4em; /* Agrandir encore la taille des h1 */
     }
 
     h2 {
-        font-size: 2.6em; /* Agrandir encore la taille des h2 */
+        font-size: 3.6em; /* Agrandir encore la taille des h2 */
     }
 
     h3 {
-        font-size: 2.2em; /* Agrandir encore la taille des h3 */
+        font-size: 3.2em; /* Agrandir encore la taille des h3 */
     }
 
     .box-competence a {
@@ -394,8 +394,8 @@ footer {
     }
 
     .box, .box-centre-interet {
-        height: 400px; /* Augmenter encore la hauteur des boîtes pour plus de confort */
-        padding: 30px; /* Plus de padding pour une meilleure présentation */
+        height: 500px; /* Augmenter encore la hauteur des boîtes pour plus de confort */
+        padding: 50px; /* Plus de padding pour une meilleure présentation */
     }
 
     .box-competence {
@@ -403,7 +403,7 @@ footer {
     }
 
     .imagebox, .imagebox-centre-interet {
-        height: 350px; /* Augmenter encore la taille des images pour plus de visibilité */
+        height: 450px; /* Augmenter encore la taille des images pour plus de visibilité */
     }
 
     .overlay {
