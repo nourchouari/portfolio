@@ -318,7 +318,7 @@ footer {
 
 
 /* Media Queries for Responsiveness */
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     #buttonNav {
         display: block;
     }
@@ -327,7 +327,7 @@ footer {
         display: none;
         flex-direction: column;
         background: rgba(226, 191, 213, 0.9); /* Couleur principale */
-        position: fixed;
+        /*position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -344,7 +344,7 @@ footer {
 
     nav a {
         font-size: 2.5em; /* Agrandir encore la taille des liens dans la navigation */
-        margin: 15px 0;
+        /*margin: 15px 0;
     }
 
     .conteneur-box, .conteneur-box-centre-interet {
@@ -353,71 +353,122 @@ footer {
 
     .imagebox, .imagebox-centre-interet {
         height: 350px; /* Augmenter encore la hauteur des images sur les petits écrans */
-    }
+    /*}
 
-    .box-competence img {
+   /* .box-competence img {
         width: 150px; /* Agrandir encore la taille des icônes sur les petits écrans */
-        height: 150px;
+        /*height: 150px;
     }
 
     body {
         font-size: 45px; /* Agrandir encore la taille de la police pour une lisibilité optimale */
-    }
+    /*}
 
-    header {
+    /*header {
         font-size: 3.5em; /* Agrandir encore la taille de la police du header */
-    }
+    /*}
 
     h1 {
         font-size: 4em; /* Agrandir encore la taille des h1 */
-    }
+    /*}
 
     h2 {
         font-size: 3.6em; /* Agrandir encore la taille des h2 */
-    }
+    /*}
 
     h3 {
         font-size: 3.2em; /* Agrandir encore la taille des h3 */
-    }
+    /*}
 
     .box-competence a {
         font-size: 2.2em; /* Agrandir les liens dans les box de compétences */
-    }
+    /*}
 
     #sideMenu ul li a {
         font-size: 2.5em; /* Agrandir encore la taille des liens du side menu */
-    }
+    /*}
 
     .conteneur-box, .conteneur-box-centre-interet {
         grid-template-columns: 1fr; /* Utiliser une seule colonne */
-        padding: 30px; /* Augmenter encore l'espacement interne */
-    }
+        /*padding: 30px; /* Augmenter encore l'espacement interne */
+    /*}
 
     .box, .box-centre-interet {
         height: 500px; /* Augmenter encore la hauteur des boîtes pour plus de confort */
-        padding: 50px; /* Plus de padding pour une meilleure présentation */
-    }
+        /*padding: 50px; /* Plus de padding pour une meilleure présentation */
+    /*}
 
     .box-competence {
         font-size: 2.2em; /* Agrandir encore la taille du texte dans les box de compétences */
-    }
+    /*}
 
     .imagebox, .imagebox-centre-interet {
         height: 450px; /* Augmenter encore la taille des images pour plus de visibilité */
-    }
+    /*}
 
     .overlay {
         opacity: 0.95; /* Rendre l'overlay encore plus visible */
+   /* }
+
+  /*  #menuToggle {
+        padding: 20px 30px; /* Agrandir encore la taille du bouton du menu */
+        /*font-size: 2em; /* Agrandir encore la taille du texte du bouton du menu */
+    /*}
+
+    /*footer {
+        font-size: 2.2em; /* Agrandir encore la taille du texte du footer */
+    
+@media (max-width: 768px) {
+    body {
+        font-size: 20px; /* Texte plus grand pour une meilleure lisibilité */
     }
 
-    #menuToggle {
-        padding: 20px 30px; /* Agrandir encore la taille du bouton du menu */
-        font-size: 2em; /* Agrandir encore la taille du texte du bouton du menu */
+    h1 {
+        font-size: 2.4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    nav a {
+        font-size: 1.8em;
+    }
+
+    .conteneur-box, .conteneur-box-centre-interet {
+        grid-template-columns: 1fr; /* Une seule colonne pour des éléments plus grands */
+        padding: 20px;
+    }
+
+    .box, .box-centre-interet {
+        height: 300px; /* Augmente la hauteur des boîtes */
+        padding: 20px;
+    }
+
+    .box-competence {
+        font-size: 1.6em; /* Augmente la taille du texte */
+    }
+
+    .box-competence img {
+        width: 80px; /* Augmente la taille des icônes */
+        height: 80px;
+    }
+
+    .imagebox, .imagebox-centre-interet {
+        height: 250px; /* Agrandit les images */
+    }
+
+    .overlay {
+        opacity: 0.9; /* Rend l’overlay plus visible */
     }
 
     footer {
-        font-size: 2.2em; /* Agrandir encore la taille du texte du footer */
+        font-size: 1.6em;
     }
 }
-}
+    
 
