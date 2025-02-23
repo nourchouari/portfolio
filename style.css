@@ -420,55 +420,54 @@ footer {
     
 @media (max-width: 768px) {
     body {
-        font-size: 20px; /* Texte plus grand pour une meilleure lisibilité */
+        font-size: 30px; /* Texte ultra grand */
     }
 
     h1 {
-        font-size: 2.4em;
+        font-size: 4em; /* Titres énormes */
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 3.5em;
     }
 
     h3 {
-        font-size: 1.6em;
+        font-size: 3em;
     }
 
     nav a {
-        font-size: 1.8em;
+        font-size: 2.8em; /* Liens de navigation énormes */
     }
 
     .conteneur-box, .conteneur-box-centre-interet {
-        grid-template-columns: 1fr; /* Une seule colonne pour des éléments plus grands */
-        padding: 20px;
+        grid-template-columns: 1fr; /* Toujours une seule colonne */
+        padding: 40px; /* Espacements géants */
     }
 
     .box, .box-centre-interet {
-        height: 300px; /* Augmente la hauteur des boîtes */
-        padding: 20px;
+        height: 500px; /* Boîtes géantes */
+        padding: 40px;
     }
 
     .box-competence {
-        font-size: 1.6em; /* Augmente la taille du texte */
+        font-size: 2.5em; /* Texte des compétences super grand */
     }
 
     .box-competence img {
-        width: 80px; /* Augmente la taille des icônes */
-        height: 80px;
+        width: 150px; /* Icônes énormes */
+        height: 150px;
     }
 
     .imagebox, .imagebox-centre-interet {
-        height: 250px; /* Agrandit les images */
+        height: 450px; /* Images immenses */
     }
 
     .overlay {
-        opacity: 0.9; /* Rend l’overlay plus visible */
+        opacity: 1; /* Overlay totalement visible */
     }
 
     footer {
-        font-size: 1.6em;
+        font-size: 2.5em;
+        padding: 40px;
     }
 }
-    
-
