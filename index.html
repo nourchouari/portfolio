@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html lang="FR">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Nour CHOUARI - Étudiante première année en BUT Informatique</title>
+    <link rel="stylesheet" href="accueil.css">
     <link rel="stylesheet" href="style.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour rendre le site responsive -->
 </head>
 <body>
     <header class="fondFlou" id="top">
         <h2><a class="textNav" id="titreHeader">Nour CHOUARI</a></h2>
-        <button id="menuToggle" aria-label="Ouvrir le menu">
-            <img src="menu.png" alt="" width="30px">
-        </button>
-        
-        <input type="checkbox" id="menuToggle">
-    <label for="menuToggle" id="buttonNav">☰ Menu</label>
+        <input type="checkbox" id="toggleMenu">
+        <label for="toggleMenu" id="buttonNav">&#9776; Menu</label>
         <nav id="sideMenu" class="side-menu">
-            <button id="menuClose" aria-label="Fermer le menu">&times;</button>
             <a class="textNav" href="#competences">Compétences</a>
             <a class="textNav" href="#projets">Projets</a>
             <a class="textNav" href="#formations">Formations</a>
             <a class="textNav" href="#centreInteret">Centres d'intérêt</a>
             <a class="textNav" href="#contact">Contact</a>
         </nav>
-    
-</header>
+    </header>
     
     <main>
-       
-        <section id="section1" >
+        <section id="section1">
             <div id="titreExplicative">
                 <div>
                     <h1>Nour CHOUARI</h1>
@@ -38,14 +32,13 @@
         </section>
         <hr>
         <section id="section2">
-            
             <article>
                 <div id="conteneurSection2">
                     <h2 class="titreRubrique">L'informatique, pour moi, ...</h2>
                     <p>
                         C'est d'abord un choix de cœur. En effet, depuis mon plus jeune âge, 
-                        j'ai été fasciné par le monde de l'informatique et des technologies. En 2019 je me suis 
-                        lancé en autodidacte dans le développement web avec HTML et CSS et l’apprentissage de langage informatiques 
+                        j'ai été fascinée par le monde de l'informatique et des technologies. En 2019 je me suis 
+                        lancée en autodidacte dans le développement web avec HTML et CSS et l’apprentissage de langages informatiques 
                         comme Python et je n’ai plus jamais lâché depuis. Cette passion s'est développée au fil des années 
                         et j'ai réalisé que l'informatique est bien plus qu'un simple outil, c'est un univers en perpétuelle 
                         évolution, où l'imagination et la créativité sont les seules limites.
@@ -72,26 +65,26 @@
                     <div class="box-competence"><img src="competence-html.png" alt="icon HTML"><p>HTML</p></div>
                     <div class="box-competence"><img src="competence-css.png" alt="icon CSS"><p>CSS</p></div>
                     <div class="box-competence"><img src="competence-php.png" alt="icon PHP"><p>PHP</p></div>
-                    <div class="box-competence"><img src="competence-java.webp" alt="icon java"><p>Java</p></div>
-                    <div class="box-competence"><img src="competence-c.png" alt="icon c"><p>C</p></div>
-                    <div class="box-competence"><img src="competence-python.png" alt="icon python"><p>Python</p></div>
-                    <div class="box-competence"><img src="competence-mysql.png" alt="icon mysql"><p>MySQL</p></div>
-                    <div class="box-competence"><img src="competence-bash.png" alt="icon bash"><p>Bash</p></div>
-                    <div class="box-competence"><img src="competence-linux.png" alt="icon linux"><p>Linux</p></div>
-                    <div class="box-competence"><img src="competence-windows.png" alt="icon windows"><p>Windows</p></div>
-                    <div class="box-competence"><img src="competence-macos.png" alt="icon macos"><p>Mac OS</p></div>
-                    <div class="box-competence"><img src="competence-IntelliJ.png" alt="icon intelliJ idea"><p>IntelliJ Idea</p></div>
+                    <div class="box-competence"><img src="competence-java.webp" alt="icon Java"><p>Java</p></div>
+                    <div class="box-competence"><img src="competence-c.png" alt="icon C"><p>C</p></div>
+                    <div class="box-competence"><img src="competence-python.png" alt="icon Python"><p>Python</p></div>
+                    <div class="box-competence"><img src="competence-mysql.png" alt="icon MySQL"><p>MySQL</p></div>
+                    <div class="box-competence"><img src="competence-bash.png" alt="icon Bash"><p>Bash</p></div>
+                    <div class="box-competence"><img src="competence-linux.png" alt="icon Linux"><p>Linux</p></div>
+                    <div class="box-competence"><img src="competence-windows.png" alt="icon Windows"><p>Windows</p></div>
+                    <div class="box-competence"><img src="competence-macos.png" alt="icon MacOS"><p>Mac OS</p></div>
+                    <div class="box-competence"><img src="competence-IntelliJ.png" alt="icon IntelliJ IDEA"><p>IntelliJ IDEA</p></div>
                     <div class="box-competence"><img src="competence-junit.png" alt="icon JUnit"><p>JUnit</p></div>
                     <div class="box-competence"><img src="competence-jmerise.png" alt="icon JMerise"><p>JMerise</p></div>
-                    <div class="box-competence"><img src="competence-postgresql.png" alt="icon PSql"><p>PostgreSQL</p></div>
-                    <div class="box-competence"><img src="competence-visualstudiocode.png" alt="icon vsCode"><p>VS Code</p></div>
+                    <div class="box-competence"><img src="competence-postgresql.png" alt="icon PostgreSQL"><p>PostgreSQL</p></div>
+                    <div class="box-competence"><img src="competence-visualstudiocode.png" alt="icon VSCode"><p>VS Code</p></div>
                     <div class="box-competence"><img src="competence-VirtualBox.png" alt="icon VirtualBox"><p>VirtualBox</p></div>
-                    <div class="box-competence"><img src="competence-github.png" alt="icon github"><p>GitHub</p></div>
-                    <div class="box-competence"><img src="competence-googleworkspace.png" alt="icon googleworkspace"><p>Google Workspace</p></div>
-                    <div class="box-competence"><img src="competence-microsoftoffice.png" alt="icon microsoftoffice"><p>Microsoft Office</p></div>
-                    <div class="box-competence"><img src="competence-libreoffice.png" alt="icon libreoffice"><p>Libre Office</p></div>
-                    <div class="box-competence"><img src="competence-trelllo.png" alt="icon trello"><p>Trello</p></div>
-                    <div class="box-competence"><img src="competence-canva.png" alt="icon canva"><p>Canva</p></div>
+                    <div class="box-competence"><img src="competence-github.png" alt="icon GitHub"><p>GitHub</p></div>
+                    <div class="box-competence"><img src="competence-googleworkspace.png" alt="icon Google Workspace"><p>Google Workspace</p></div>
+                    <div class="box-competence"><img src="competence-microsoftoffice.png" alt="icon Microsoft Office"><p>Microsoft Office</p></div>
+                    <div class="box-competence"><img src="competence-libreoffice.png" alt="icon LibreOffice"><p>Libre Office</p></div>
+                    <div class="box-competence"><img src="competence-trello.png" alt="icon Trello"><p>Trello</p></div>
+                    <div class="box-competence"><img src="competence-canva.png" alt="icon Canva"><p>Canva</p></div>
                 </div>
             </article>
         </section>
@@ -101,12 +94,12 @@
                 <h2 class="titreRubrique">MES FORMATIONS</h2>
                 <div class="conteneur-box">
                     <div class="box">
-                        <img class="imagebox" src="formation-bacc.jpeg" alt="">
+                        <img class="imagebox" src="formation-bacc.jpeg" alt="Baccalauréat Général">
                         <h3 class="titrebox">Baccalauréat Général</h3>
                         <div class="overlay"></div>
                     </div>
                     <div class="box">
-                        <img class="imagebox" src="formation-but.jpg" alt="">
+                        <img class="imagebox" src="formation-but.jpg" alt="BUT Informatique">
                         <h3 class="titrebox">BUT Informatique</h3>
                         <div class="overlay"></div>
                     </div>
@@ -119,80 +112,81 @@
                 <h2 class="titreRubrique">MES PROJETS</h2>
                 <div class="conteneur-box">
                     <div class="box">
-                        <img class="imagebox" src="projet-installationposte.jpg" alt="">
+                        <img class="imagebox" src="projet-installationposte.jpg" alt="Installation d'un poste de travail">
                         <h3 class="titrebox">Installation d'un poste de travail</h3>
                         <div class="overlay"></div>
                     </div>
-                    <a class="box" href="https://fousseynic.github.io/JO-2024/">
-                        <img class="imagebox" src="projet-creationsitejo.png" alt="">
+                    <div class="box">
+                        <img class="imagebox" src="projet-creationsitejo.png" alt="Création d'un site web pour présenter les JOP24">
                         <h3 class="titrebox">Création d'un site web pour présenter les JOP24</h3>
                         <div class="overlay"></div>
-                    </a>
-                    <a class="box" href="https://github.com/nourchouari/projet-BD-UFC">
-                        <img class="imagebox" src="projet-basededonnees.jpg" alt="">
-                        <h3 class="titrebox">Recréation de la base de données de</h3>
+                        <a class="hrefbox" href="https://fouxe10.github.io/JO-2024/"></a>
+                    </div>
+                    <div class="box">
+                        <img class="imagebox" src="projet-basededonnees.jpg" alt="Recréation de la base de données">
+                        <h3 class="titrebox">Recréation de la base de données</h3>
                         <div class="overlay"></div>
-                    </a>
-                    <a class="box" href="https://github.com/nourchouari/jeudechecs">
-                        <img class="imagebox" src="projet-dev.png" alt="">
+                    </div>
+                    <div class="box">
+                        <img class="imagebox" src="projet-dev.png" alt="Création d'un jeu d'échecs">
                         <h3 class="titrebox">Création d'un jeu d'échecs</h3>
+                        <a class="hrefbox" href="https://github.com/nourchouari/jeudechecs"></a>
                         <div class="overlay"></div>
-                    </a>
+                    </div>
                 </div>
             </article>
         </section>
         <hr>
         <section id="centreInteret">
             <article class="rubrique">
-                <h2 class="titreRubrique">MES CENTRES D'INTERÊT</h2>
+                <h2 class="titreRubrique">MES CENTRES D'INTÉRÊT</h2>
                 <div class="conteneur-box-centre-interet">
-                    
                     <div class="box-centre-interet">
-                        <img class="imagebox-centre-interet" src="centreinteret-lecture.jpg" alt="">
+                        <img class="imagebox-centre-interet" src="centreinteret-lecture.jpg" alt="Lecture">
                         <h3 class="titrebox-centre-interet">Lecture</h3>
                         <div class="overlay"></div>
                     </div>
                     <div class="box-centre-interet">
-                        <img class="imagebox-centre-interet" src="centreinteret-jeux.jpg" alt="">
+                        <img class="imagebox-centre-interet" src="centreinteret-jeux.jpg" alt="Jeux vidéos">
                         <h3 class="titrebox-centre-interet">Jeux vidéos</h3>
                         <div class="overlay"></div>
                     </div>
                     <div class="box-centre-interet">
-                        <img class="imagebox-centre-interet" src="cours-de-modern-jazz.png" alt="">
+                        <img class="imagebox-centre-interet" src="cours-de-modern-jazz.png" alt="Danse moderne jazz">
                         <h3 class="titrebox-centre-interet">Danse moderne jazz</h3>
                         <div class="overlay"></div>
                     </div>
                 </div>
             </article>
         </section>
-
         <hr>
         <section id="contact">
             <article class="rubrique">
                 <h2 class="titreRubrique">CONTACT</h2>
                 <div class="conteneur-box-centre-interet">
-                    <a class="box" href="https://www.linkedin.com/in/nour-chouari-23bab5332">
-                        <img class="imagebox" src="contact-linkedin.png" alt="">
-                        <h3 class="titrebox-centre-interet">Linkedin</h3>
-                        <div class="overlay"></div>
-                    </a>
                     <div class="box-centre-interet">
-                        <img class="imagebox-centre-interet" src="contact-tel.jpg" alt="">
+                        <img class="imagebox-centre-interet" src="contact-linkedin.png" alt="LinkedIn">
+                        <h3 class="titrebox-centre-interet">LinkedIn</h3>
+                        <div class="overlay"></div>
+                        <a class="hrefbox" href="https://www.linkedin.com/in/nour-chouari-23bab5332"></a>
+                    </div>
+                    <div class="box-centre-interet">
+                        <img class="imagebox-centre-interet" src="contact-tel.jpg" alt="Téléphone">
                         <h4 class="titrebox-centre-interet">07.52.06.65.26</h4>
                         <div class="overlay"></div>
                     </div>
-                    <a class="box" href="CV.pdf">
-                        <img class="imagebox" src="cv.png" alt="">
+                    <div class="box-centre-interet">
+                        <img class="imagebox-centre-interet" src="cv.png" alt="Curriculum Vitae">
                         <h3 class="titrebox-centre-interet">Curriculum Vitae</h3>
                         <div class="overlay"></div>
-                    </a>
+                        <a class="hrefbox" href="CV.pdf"></a>
+                    </div>
                 </div>
             </article>
         </section>
     </main>
-    
     <footer>
-        <p>Nour CHOUARI &copy 2024 - Tous droits réservés</p>
+        <p>Nour CHOUARI &copy; 2024 - Tous droits réservés</p>
     </footer>
     <script src="menu.js"></script>
 </body>
