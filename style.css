@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background: rgba(226, 191, 213, 0.9); /* #E2BFD5 avec transparence */
+    background: rgba(226, 191, 213, 0.9);
     backdrop-filter: blur(10px);
     padding: 10px 20px;
     position: sticky;
@@ -19,16 +19,49 @@ header {
 }
 
 hr {
-    border: 0; /* Supprime la bordure par défaut */
-    height: 2px; /* Définit l'épaisseur de la ligne */
-    margin: 20px 0; /* Ajoute des marges pour espacer les sections */
+    border: 0;
+    height: 2px;
+    margin: 20px 0;
     background-color: rgba(226, 191, 213, 0.9);
 }
 
-section{
+section {
     height: fit-content;
 }
-/* Cache le bouton de menu sur grands écrans */
+
+/* Hide the navigation menu on small screens */
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(226, 191, 213, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #toggleMenu:checked ~ nav {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 1.5em;
+        margin: 15px 0;
+    }
+
+    #buttonNav {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Show the navigation menu on larger screens */
 @media screen and (min-width: 768px) {
     #menuToggle {
         display: none;
@@ -49,7 +82,6 @@ section{
         display: none;
     }
 }
-
 
 #toggleMenu {
     display: none;
@@ -74,10 +106,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #E2BFD5; /* Changement de couleur au survol */
+    color: #E2BFD5;
 }
 
-/* Main Content */
 main {
     padding: 20px;
 }
@@ -109,13 +140,13 @@ h1, h2, h3 {
 
 .box-competence:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5); /* Ombre avec la couleur principale */
+    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5);
 }
 
 .box-competence img {
-    width: 60px; /* Taille fixe pour les icônes de compétences */
+    width: 60px;
     height: 60px;
-    margin: 0 auto 10px; /* Centrer l'icône et ajouter un espace en dessous */
+    margin: 0 auto 10px;
 }
 
 /* Responsive Grid for Projects and Interests */
@@ -131,28 +162,28 @@ h1, h2, h3 {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px; /* Hauteur fixe pour uniformiser les boîtes */
+    height: 200px;
 }
 
 .imagebox {
-    width: 100%; /* Prend toute la largeur du conteneur */
-    height: 100%; /* Prend toute la hauteur du conteneur */
-    object-fit: cover; /* Assure que l'image couvre toute la zone sans déformation */
-    border-radius: 8px; /* Arrondit les coins */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .box:hover, .box-centre-interet:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5); /* Ombre avec la couleur principale */
+    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5);
 }
 
 .titrebox {
-    text-decoration: none; /* Supprime le soulignement par défaut des liens */
-    color: inherit; /* Assure que la couleur du texte suit les styles définis */
+    text-decoration: none;
+    color: inherit;
 }
 
 .box:hover {
-    transform: scale(1.03); /* Ajout d'un léger effet au survol */
+    transform: scale(1.03);
     transition: transform 0.2s ease-in-out;
 }
 
@@ -162,18 +193,18 @@ h1, h2, h3 {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px; /* Hauteur fixe pour uniformiser les boîtes */
+    height: 200px;
 }
 
 .imagebox-centre-interet {
-    width: 100%; /* Prend toute la largeur du conteneur */
-    height: 100%; /* Prend toute la hauteur du conteneur */
-    object-fit: cover; /* Assure que l'image couvre toute la zone sans déformation */
-    border-radius: 8px; /* Arrondit les coins */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .box:hover .imagebox, .box-centre-interet:hover .imagebox-centre-interet {
-    transform: scale(1.1); /* Effet de zoom au survol */
+    transform: scale(1.1);
 }
 
 .overlay {
@@ -182,7 +213,7 @@ h1, h2, h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(226, 191, 213, 0.7); /* Overlay avec la couleur principale */
+    background: rgba(226, 191, 213, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -200,8 +231,6 @@ h1, h2, h3 {
     z-index: 2;
 }
 
-
-/* Styles pour les liens dans les box */
 a.box {
     display: block;
     text-decoration: none;
@@ -211,23 +240,23 @@ a.box {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px; /* Hauteur fixe pour uniformiser les boîtes */
+    height: 200px;
 }
 
 a.box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5); /* Ombre avec la couleur principale */
+    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5);
 }
 
 a.box .imagebox {
-    width: 100%; /* Prend toute la largeur du conteneur */
-    height: 100%; /* Prend toute la hauteur du conteneur */
-    object-fit: cover; /* Assure que l'image couvre toute la zone sans déformation */
-    border-radius: 8px; /* Arrondit les coins */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 a.box:hover .imagebox {
-    transform: scale(1.1); /* Effet de zoom au survol */
+    transform: scale(1.1);
 }
 
 a.box .overlay {
@@ -236,7 +265,7 @@ a.box .overlay {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(226, 191, 213, 0.7); /* Overlay avec la couleur principale */
+    background: rgba(226, 191, 213, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -254,7 +283,6 @@ a.box .titrebox {
     z-index: 2;
 }
 
-/* Styles pour les box-centre-interet avec des liens */
 a.box-centre-interet {
     display: block;
     text-decoration: none;
@@ -264,23 +292,23 @@ a.box-centre-interet {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px; /* Hauteur fixe pour uniformiser les boîtes */
+    height: 200px;
 }
 
 a.box-centre-interet:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5); /* Ombre avec la couleur principale */
+    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5);
 }
 
 a.box-centre-interet .imagebox-centre-interet {
-    width: 100%; /* Prend toute la largeur du conteneur */
-    height: 100%; /* Prend toute la hauteur du conteneur */
-    object-fit: cover; /* Assure que l'image couvre toute la zone sans déformation */
-    border-radius: 8px; /* Arrondit les coins */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 a.box-centre-interet:hover .imagebox-centre-interet {
-    transform: scale(1.1); /* Effet de zoom au survol */
+    transform: scale(1.1);
 }
 
 a.box-centre-interet .overlay {
@@ -289,7 +317,7 @@ a.box-centre-interet .overlay {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(226, 191, 213, 0.7); /* Overlay avec la couleur principale */
+    background: rgba(226, 191, 213, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -307,167 +335,10 @@ a.box-centre-interet .titrebox-centre-interet {
     z-index: 2;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #E2BFD5; /* Couleur principale */
+    background: #E2BFD5;
     color: #444;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Media Queries for Responsiveness */
-/*@media (max-width: 767px) {
-    #buttonNav {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        background: rgba(226, 191, 213, 0.9); /* Couleur principale */
-        /*position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        z-index: 1001;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    #toggleMenu:checked ~ nav {
-        display: flex;
-    }
-
-    nav a {
-        font-size: 2.5em; /* Agrandir encore la taille des liens dans la navigation */
-        /*margin: 15px 0;
-    }
-
-    .conteneur-box, .conteneur-box-centre-interet {
-        grid-template-columns: 1fr;
-    }
-
-    .imagebox, .imagebox-centre-interet {
-        height: 350px; /* Augmenter encore la hauteur des images sur les petits écrans */
-    /*}
-
-   /* .box-competence img {
-        width: 150px; /* Agrandir encore la taille des icônes sur les petits écrans */
-        /*height: 150px;
-    }
-
-    body {
-        font-size: 45px; /* Agrandir encore la taille de la police pour une lisibilité optimale */
-    /*}
-
-    /*header {
-        font-size: 3.5em; /* Agrandir encore la taille de la police du header */
-    /*}
-
-    h1 {
-        font-size: 4em; /* Agrandir encore la taille des h1 */
-    /*}
-
-    h2 {
-        font-size: 3.6em; /* Agrandir encore la taille des h2 */
-    /*}
-
-    h3 {
-        font-size: 3.2em; /* Agrandir encore la taille des h3 */
-    /*}
-
-    .box-competence a {
-        font-size: 2.2em; /* Agrandir les liens dans les box de compétences */
-    /*}
-
-    #sideMenu ul li a {
-        font-size: 2.5em; /* Agrandir encore la taille des liens du side menu */
-    /*}
-
-    .conteneur-box, .conteneur-box-centre-interet {
-        grid-template-columns: 1fr; /* Utiliser une seule colonne */
-        /*padding: 30px; /* Augmenter encore l'espacement interne */
-    /*}
-
-    .box, .box-centre-interet {
-        height: 500px; /* Augmenter encore la hauteur des boîtes pour plus de confort */
-        /*padding: 50px; /* Plus de padding pour une meilleure présentation */
-    /*}
-
-    .box-competence {
-        font-size: 2.2em; /* Agrandir encore la taille du texte dans les box de compétences */
-    /*}
-
-    .imagebox, .imagebox-centre-interet {
-        height: 450px; /* Augmenter encore la taille des images pour plus de visibilité */
-    /*}
-
-    .overlay {
-        opacity: 0.95; /* Rendre l'overlay encore plus visible */
-   /* }
-
-  /*  #menuToggle {
-        padding: 20px 30px; /* Agrandir encore la taille du bouton du menu */
-        /*font-size: 2em; /* Agrandir encore la taille du texte du bouton du menu */
-    /*}
-
-    /*footer {
-        font-size: 2.2em; /* Agrandir encore la taille du texte du footer */
-    
-@media (max-width: 768px) {
-    body {
-        font-size: 30px; /* Texte ultra grand */
-    }
-
-    h1 {
-        font-size: 4em; /* Titres énormes */
-    }
-
-    h2 {
-        font-size: 3.5em;
-    }
-
-    h3 {
-        font-size: 3em;
-    }
-
-    nav a {
-        font-size: 2.8em; /* Liens de navigation énormes */
-    }
-
-    .conteneur-box, .conteneur-box-centre-interet {
-        grid-template-columns: 1fr; /* Toujours une seule colonne */
-        padding: 40px; /* Espacements géants */
-    }
-
-    .box, .box-centre-interet {
-        height: 500px; /* Boîtes géantes */
-        padding: 40px;
-    }
-
-    .box-competence {
-        font-size: 2.5em; /* Texte des compétences super grand */
-    }
-
-    .box-competence img {
-        width: 150px; /* Icônes énormes */
-        height: 150px;
-    }
-
-    .imagebox, .imagebox-centre-interet {
-        height: 450px; /* Images immenses */
-    }
-
-    .overlay {
-        opacity: 1; /* Overlay totalement visible */
-    }
-
-    footer {
-        font-size: 2.5em;
-        padding: 40px;
-    }
 }
