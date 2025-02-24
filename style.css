@@ -52,15 +52,10 @@ section {
         padding: 5px 10px;
     }
 
-}
-
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-}
 
 nav a {
+    font-size: 1em;
+    padding: 5px 10px;
     margin-left: 20px;
     text-decoration: none;
     color: #333;
@@ -70,6 +65,7 @@ nav a {
 
 nav a:hover {
     color: #E2BFD5;
+}
 }
 
 main {
