@@ -33,39 +33,12 @@ section {
 @media screen and (max-width: 767px) {
     nav {
         display: none;
-        flex-direction: column;
-        background: rgba(226, 191, 213, 0.9);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        z-index: 1001;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    #toggleMenu:checked ~ nav {
-        display: flex;
-    }
-
-    nav a {
-        font-size: 1.5em;
-        margin: 15px 0;
-    }
-
-    #buttonNav {
-        display: block;
-        cursor: pointer;
     }
 }
 
 /* Show the navigation menu on larger screens */
 @media screen and (min-width: 768px) {
-    #menuToggle {
-        display: none;
-    }
+   
     .side-menu {
         position: static;
         width: auto;
@@ -78,19 +51,9 @@ section {
         font-size: 1em;
         padding: 5px 10px;
     }
-    #menuClose {
-        display: none;
-    }
+
 }
 
-#toggleMenu {
-    display: none;
-}
-
-#buttonNav {
-    display: none;
-    cursor: pointer;
-}
 
 nav {
     display: flex;
