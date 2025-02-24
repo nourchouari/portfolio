@@ -29,44 +29,45 @@ section {
     height: fit-content;
 }
 
-/* Hide the navigation menu on small screens */
+
+/* Mobile Menu */
 @media screen and (max-width: 767px) {
     nav {
-        display: none;
+        display: none; /* Cacher le menu par défaut */
     }
+
 }
 
-/* Show the navigation menu on larger screens */
+/* Grand écran : Menu classique */
 @media screen and (min-width: 768px) {
-   
-    .side-menu {
+    nav {
+        display: flex; /* Afficher le menu de manière classique sur les grands écrans */
+        flex-direction: row;
+        background: none;
         position: static;
         width: auto;
         height: auto;
-        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
         box-shadow: none;
-        background: none;
     }
-    .side-menu a {
+
+    nav a {
         font-size: 1em;
         padding: 5px 10px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s ease;
     }
-
-
-nav a {
-    font-size: 1em;
-    padding: 5px 10px;
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    
+    nav a:hover {
+        color: #E2BFD5;
+    }
 }
 
-nav a:hover {
-    color: #E2BFD5;
-}
-}
+
 
 main {
     padding: 20px;
@@ -174,118 +175,13 @@ h1, h2, h3 {
     bottom: 0;
     background: rgba(226, 191, 213, 0.7);
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
+    transition: opacity 0.3s ease;}
 
 .box:hover .overlay, .box-centre-interet:hover .overlay {
     opacity: 1;
 }
 
 .titrebox, .titrebox-centre-interet {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.2em;
-    z-index: 2;
-}
-
-a.box {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px;
-}
-
-a.box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5);
-}
-
-a.box .imagebox {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-a.box:hover .imagebox {
-    transform: scale(1.1);
-}
-
-a.box .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(226, 191, 213, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-a.box:hover .overlay {
-    opacity: 1;
-}
-
-a.box .titrebox {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.2em;
-    z-index: 2;
-}
-
-a.box-centre-interet {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 200px;
-}
-
-a.box-centre-interet:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(226, 191, 213, 0.5);
-}
-
-a.box-centre-interet .imagebox-centre-interet {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-a.box-centre-interet:hover .imagebox-centre-interet {
-    transform: scale(1.1);
-}
-
-a.box-centre-interet .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(226, 191, 213, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-a.box-centre-interet:hover .overlay {
-    opacity: 1;
-}
-
-a.box-centre-interet .titrebox-centre-interet {
     position: absolute;
     bottom: 20px;
     left: 20px;
