@@ -84,7 +84,7 @@ h1, h2, h3 {
 /* Responsive Grid for Competences */
 #conteneur-box-competences {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Change to always have 2 columns */
+    grid-template-columns: repeat(3, 1fr); /* Change to always have 3 columns */
     gap: 20px;
     padding: 20px;
 }
