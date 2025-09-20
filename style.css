@@ -1,4 +1,20 @@
 /* General Styles */
+/* S'assure que le footer reste collé en bas */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* pousse le footer vers le bas */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -189,6 +205,50 @@ h1, h2, h3 {
     font-size: 1.2em;
     z-index: 2;
 }
+
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* colonnes plus larges */
+    gap: 25px;
+    justify-items: center;
+    margin: 30px auto;
+    max-width: 1400px;
+}
+
+.galerie .box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px; /* agrandit le conteneur */
+    height: auto; /* supprime la hauteur fixe */
+}
+
+.galerie .imagebox {
+    width: 100%;
+    height: auto; /* conserve le ratio naturel des images */
+    object-fit: contain; /* affiche toute l’image sans la couper */
+    border-radius: 14px;
+    display: block;
+}
+
+
+.galerie .box:hover .imagebox {
+    transform: scale(1.08);
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+    .galerie {
+        grid-template-columns: 1fr;
+    }
+    .galerie .box {
+        max-width: 100%; /* pleine largeur en mobile */
+    }
+}
+
 
 footer {
     text-align: center;
