@@ -10,7 +10,8 @@
 <body>
 <header class="fondFlou" id="top">
   <h2><a class="textNav" id="titreHeader">Nour CHOUARI</a></h2>
-
+  <!-- Bouton menu burger -->
+  <button class="menu-toggle" id="menuToggle">☰</button>
   <nav id="sideMenu">
     <a href="index.html/#section2">Présentation</a>
     <a href="index.html/#competences">Compétences</a>
@@ -62,5 +63,23 @@
   <button id="#"><a href="#">↑ Haut de page</a></button>
   <p>Nour CHOUARI &copy; 2025 - Tous droits réservés</p>
 </footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const sideMenu = document.getElementById("sideMenu");
+
+  // ouverture / fermeture du menu
+  menuToggle.addEventListener("click", () => {
+    sideMenu.classList.toggle("show");
+  });
+
+  // refermer le menu quand on clique sur un lien
+  sideMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      sideMenu.classList.remove("show");
+    });
+  });
+</script>
+
 </body>
 </html>

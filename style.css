@@ -250,10 +250,83 @@ h1, h2, h3 {
 }
 
 
+/* Bouton burger (caché sur PC) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Version mobile/tablette */
+@media screen and (max-width: 767px) {
+    nav {
+        display: none; /* caché par défaut */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* sous le header */
+        right: 10px;
+        background: rgba(226, 191, 213, 0.95);
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+
+    nav a {
+        padding: 10px;
+        margin: 5px 0;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .menu-toggle {
+        display: block; /* affiché en mobile */
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 1100;
+    }
+
+    nav.show {
+        display: flex; /* affiché quand actif */
+    }
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
     background: #E2BFD5;
     color: #444;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+footer button {
+    background: linear-gradient(135deg, #68495d, #d09ac3);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+footer button a {
+    text-decoration: none;
+    color: inherit; /* garde la couleur blanche */
+    display: block;
+}
+
+footer button:hover {
+    background: linear-gradient(135deg, #b15a9c, #593b48);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
