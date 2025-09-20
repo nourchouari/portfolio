@@ -34,6 +34,13 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+header {
+    display: flex;
+    justify-content: space-between; /* titre à gauche, bouton/menu à droite */
+    align-items: center;
+}
+
+
 hr {
     border: 0;
     height: 2px;
@@ -263,10 +270,10 @@ h1, h2, h3 {
 /* Version mobile/tablette */
 @media screen and (max-width: 767px) {
     nav {
-        display: none; /* caché par défaut */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* sous le header */
+        top: 60px;
         right: 10px;
         background: rgba(226, 191, 213, 0.95);
         border-radius: 8px;
@@ -275,26 +282,20 @@ h1, h2, h3 {
         z-index: 1000;
     }
 
-    nav a {
-        padding: 10px;
-        margin: 5px 0;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
+    nav.show {
+        display: flex;
     }
 
     .menu-toggle {
-        display: block; /* affiché en mobile */
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        z-index: 1100;
-    }
-
-    nav.show {
-        display: flex; /* affiché quand actif */
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        color: #333;
     }
 }
+
 
 
 footer {
